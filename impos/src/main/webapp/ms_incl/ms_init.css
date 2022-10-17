@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+@import
+	url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css')
+	;
+
+* {
+	font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui,
+		Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo',
+		'Noto Sans KR', 'Malgun Gothic', sans-serif;
+}
+
+html, body {
+	height: 100%;
+}
+
+html, body, ul, li, h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	list-style: none;
+	z-index: 5;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+input {
+	padding: 0;
+	margin: 0;
+}
+
+button {
+	padding: 0;
+	margin: 0;
+}
+
+.logo {
+	color: #3f5ec4;
+	font-weight: 700;
+}
+
+.productMenu, .stockMenu, .materialMenu {
+	box-sizing: border-box;
+}
+
+.productMenu li, .stockMenu li, .materialMenu li {
+	height: 0;
+	transition: .5s;
+}
+
+.on ~ .productMenu li, .on ~ .stockMenu li, .on ~ .materialMenu li {
+	height: 50px;
+}
